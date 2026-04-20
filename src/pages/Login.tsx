@@ -67,7 +67,7 @@ const Login = () => {
               <GraduationCap className="h-8 w-8 text-white" />
             </div>
           </div>
-          <h1 className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <h1 className="text-3xl font-bold text-gradient">
             LearnPro
           </h1>
           <p className="text-muted-foreground mt-2">

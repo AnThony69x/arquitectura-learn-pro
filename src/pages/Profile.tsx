@@ -11,7 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
-import { User, Mail, Calendar, Award, Camera, Star, Home, ArrowLeft, Download } from "lucide-react";
+import { User, Mail, Calendar, Award, Camera, Star, Home, Download } from "lucide-react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useNavigate } from "react-router-dom";
@@ -487,14 +487,6 @@ export default function Profile() {
       <main className="container mx-auto px-4 py-8 max-w-6xl">
         {/* Navigation */}
         <div className="mb-6 flex justify-between items-center">
-          <Button 
-            variant="outline" 
-            onClick={() => navigate('/dashboard')}
-            className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground"
-          >
-            <ArrowLeft className="h-4 w-4" />
-            Volver al Dashboard
-          </Button>
           <Button 
             variant="outline" 
             onClick={() => navigate('/')}

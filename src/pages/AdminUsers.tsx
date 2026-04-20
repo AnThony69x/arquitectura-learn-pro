@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { 
   Users, Mail, Calendar, Search, Filter, MoreVertical, Eye, Edit, Trash2, 
-  Shield, Crown, CreditCard, Download, ArrowLeft, Plus, Ban, UserCheck
+  Shield, Crown, CreditCard, Download, Plus, Ban, UserCheck
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,7 +40,6 @@ const mockUsers = [
 ];
 
 const AdminUsers = () => {
-  const navigate = useNavigate();
   const { toast } = useToast();
   const [searchTerm, setSearchTerm] = useState("");
   const [statusFilter, setStatusFilter] = useState("Todos");
@@ -153,10 +151,6 @@ const AdminUsers = () => {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <Button variant="ghost" onClick={() => navigate("/admin/dashboard")}>
-                <ArrowLeft className="h-4 w-4 mr-2" />
-                Volver al Dashboard
-              </Button>
               <div>
                 <h1 className="text-2xl font-bold">Gestión de Usuarios</h1>
                 <p className="text-muted-foreground">Administra todos los usuarios del sistema</p>

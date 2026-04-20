@@ -398,9 +398,6 @@ const ExamPage: React.FC = () => {
             <AlertCircle className="h-16 w-16 text-red-500 mx-auto mb-4" />
             <h3 className="text-lg font-semibold mb-2">Examen no encontrado</h3>
             <p className="text-gray-600 mb-4">El examen solicitado no existe o no tienes acceso.</p>
-            <Button onClick={() => navigate('/dashboard')}>
-              Volver al Dashboard
-            </Button>
           </CardContent>
         </Card>
       </div>

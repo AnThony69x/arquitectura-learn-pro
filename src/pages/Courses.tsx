@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Badge } from '@/components/ui/badge';
 import { useEdgeFunction } from '@/hooks/useEdgeFunctions';
-import { Search, Star, Clock, Users, BookOpen, Filter, Home } from 'lucide-react';
+import { Search, Star, Clock, Users, BookOpen, Filter } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import { useCreateCheckout, useEnrollInCourse } from '@/hooks/useEdgeFunctions';
 import { supabase } from '@/lib/supabase-mvp';
@@ -271,14 +271,6 @@ const CoursesPage: React.FC = () => {
               Descubre y aprende con nuestros cursos especializados
             </p>
           </div>
-          <Button 
-            variant="outline" 
-            onClick={() => navigate('/dashboard')}
-            className="flex items-center gap-2 hover:bg-primary hover:text-primary-foreground"
-          >
-            <Home className="h-4 w-4" />
-            Volver al Dashboard
-          </Button>
         </div>
       </div>
 
